@@ -53,6 +53,13 @@ const GeneratorPage: React.FC = () => {
       >
         Generate 501 Not Implemented
       </button>
+      <button
+        onClick={() => handleErrorGeneration(200)}
+        disabled={loading}
+        className="bg-purple-500 text-white px-6 py-2 rounded hover:bg-purple-600 disabled:opacity-50"
+      >
+        Generate 200 Success 
+      </button>
     </div>
   );
 };

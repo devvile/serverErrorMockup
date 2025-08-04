@@ -1,10 +1,15 @@
 import './App.css'
 import RootLayout from './Layout'
+import AlertsManager from "./NotificationsManager.jsx"
+import { useState } from 'react';
 function App() {
-
+const [_internalServerErrorPageVisible, setInternalServerErrorPageVisible] = useState(false);
   return (
     <>
       <RootLayout />
+ <AlertsManager 
+  setInternalServerErrorPageVisible={setInternalServerErrorPageVisible}
+/>
     </>
   )
 }
